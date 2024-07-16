@@ -1,0 +1,19 @@
+module modulator_mux(
+	input [11:0] ASK_sig,
+	input [11:0] FSK_sig,
+	input [11:0] BPSK_sig, 
+	input [11:0] LFSR_sig,
+	input [1:0] sel,
+	output logic [11:0] selected_sig
+	);
+	
+	always_comb begin 
+		case(sel) 
+			2'b00: selected_sig = ASK_sig;
+			2'b01: selected_sig = FSK_sig;
+			2'b10: selected_sig = BPSK_sig; 
+			2'b11: selected_sig = LFSR_sig;
+		endcase
+	end 
+
+endmodule

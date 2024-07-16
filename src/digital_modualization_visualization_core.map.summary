@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Jul 16 11:35:44 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : digital_modualization_visualization_core
+Top-level Entity Name : top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 10595
+Total pins : 241
+Total virtual pins : 0
+Total block memory bits : 2,014,616
+Total DSP Blocks : 2
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2
+Total DLLs : 0

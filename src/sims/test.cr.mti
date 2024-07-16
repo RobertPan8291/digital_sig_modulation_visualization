@@ -1,0 +1,10 @@
+C:/intelFPGA_lite/16.1/project/lab5/LFSR.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA_lite/16.1/project/lab5/LFSR.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module d_ff
+-- Compiling module d_ff2
+-- Compiling module LFSR
+
+Top level modules:
+	LFSR
+
+} {} {}}

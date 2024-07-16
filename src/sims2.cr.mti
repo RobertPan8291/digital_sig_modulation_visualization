@@ -1,0 +1,20 @@
+C:/totally_legal_version_of_quartus/project/lab5/sincos_lut.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/totally_legal_version_of_quartus/project/lab5/sincos_lut.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity sincos_lut
+-- Compiling architecture rtl of sincos_lut
+
+} {} {}} C:/totally_legal_version_of_quartus/project/lab5/waveform_gen.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/totally_legal_version_of_quartus/project/lab5/waveform_gen.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity waveform_gen
+-- Compiling architecture rtl of waveform_gen
+
+} {} {}}

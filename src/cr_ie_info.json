@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X000002C38CE3ABE0",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x2c38ce3abdf:\n\t0x7ffe23fda712: sld_sdr + 0x8a712 (?get_value@SDR_TX_GENERIC_NODE_ATTRIB_DECORATOR@@UEAAPEBDPEBD@Z + 0x12)\n\t0x7ffe2400c01c: sld_sdr + 0xbc01c (?get_non_null_char@SDR_TX_ATTRIB_VALUE_TYPE_ADAPTER@@QEAAPEBDPEBD@Z + 0xc)\n\t0x7ffe24008f8b: sld_sdr + 0xb8f8b (?notify@SDR_TX_TRIGGER_IN_OUT_INSTANCE_NAME_OBSERVER@SDR_TX_TRIGGER_IN_OUT_COMMON@@UEAAXPEBD0@Z + 0x2b)\n\t0x7ffe23f67209: sld_sdr + 0x17209 (?set_name@SDR_DATA_INSTANCE@@QEAA_NPEBD@Z + 0xc9)\n\t0x7ffe285c86bf: sld_sedq + 0xd86bf (?rename_instance_set@SEDQ_TX_MANAGER@@QEAAXPEBD0@Z + 0x5f)\n\t0x7ffe2859a154: sld_sedq + 0xaa154 (?on_item_changed@SEDQ_INSTANCE_WIDGET@@IEAAXPEAVQStandardItem@@@Z + 0x104)\n\t 0x65d1c420: QtCore4 + 0x11c420 (?activate@QMetaObject@@SAXPEAVQObject@@PEBU1@HPEAPEAX@Z + 0x520)\n\t 0x663d8777: QtGui4 + 0x4e8777 (??MQStandardItem@@UEBA_NAEBV0@@Z + 0x617)\n\t 0x65d1c420: QtCore4 + 0x11c420 (?activate@QMetaObject@@SAXPEAVQObject@@PEBU1@HPEAPEAX@Z + 0x520)\n\t 0x65d60ff9: QtCore4 + 0x160ff9 (?dataChanged@QAbstractItemModel@@IEAAXAEBVQModelIndex@@0@Z + 0x39)\n\t 0x663db2c1: QtGui4 + 0x4eb2c1 (?itemChanged@QStandardItemModel@@IEAAXPEAVQStandardItem@@@Z + 0x131)\n\t 0x663dd588: QtGui4 + 0x4ed588 (?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z + 0x178)\n\t 0x663dd5ea: QtGui4 + 0x4ed5ea (?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z + 0x3a)\n\t 0x663ea79f: QtGui4 + 0x4fa79f (?setModelData@QStyledItemDelegate@@UEBAXPEAVQWidget@@PEAVQAbstractItemModel@@AEBVQModelIndex@@@Z + 0x12f)\n\t 0x6635a4a2: QtGui4 + 0x46a4a2 (?commitData@QAbstractItemView@@MEAAXPEAVQWidget@@@Z + 0xa2)\n\t 0x65d1c420: QtCore4 + 0x11c420 (?activate@QMetaObject@@SAXPEAVQObject@@PEBU1@HPEAPEAX@Z + 0x520)\n\t 0x66481d50: QtGui4 + 0x591d50 (?commitData@QAbstractItemDelegate@@IEAAXPEAVQWidget@@@Z + 0x30)\n\t 0x6639c3d0: QtGui4 + 0x4ac3d0 (?qt_static_metacall@QItemDelegate@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z + 0x30)\n\t 0x65d1f9f7: QtCore4 + 0x11f9f7 (?event@QObject@@UEAA_NPEAVQEvent@@@Z + 0xe7)\n\t 0x65f12e95: QtGui4 + 0x22e95 (?notify_helper@QApplicationPrivate@@QEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0xf5)\n\t 0x65f12b2f: QtGui4 + 0x22b2f (?notify@QApplication@@UEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x17bf)\n\t 0x65d0d92b: QtCore4 + 0x10d92b (?notifyInternal@QCoreApplication@@AEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x7b)\n\t 0x65d0f502: QtCore4 + 0x10f502 (?sendPostedEvents@QCoreApplicationPrivate@@SAXPEAVQObject@@HPEAVQThreadData@@@Z + 0x2b2)\n\t 0x65d32fb8: QtCore4 + 0x132fb8 (?processEvents@QEventDispatcherWin32@@UEAA_NV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0xb98)\n\t0x7ffe912589a0: USER32 + 0x189a0 (DispatchMessageW + 0x740)\n\t0x7ffe91258460: USER32 + 0x18460 (DispatchMessageW + 0x200)\n\t 0x65d32802: QtCore4 + 0x132802 (?processEvents@QEventDispatcherWin32@@UEAA_NV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x3e2)\n\t 0x65f70eb4: QtGui4 + 0x80eb4 (?openPopup@QApplicationPrivate@@QEAAXPEAVQWidget@@@Z + 0x204)\n\t 0x65d0a88b: QtCore4 + 0x10a88b (?exec@QEventLoop@@QEAAHV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x22b)\n\t 0x65d0ce6f: QtCore4 + 0x10ce6f (?exec@QCoreApplication@@SAHXZ + 0xdf)\n\t0x7ff65579197b: quartus + 0x197b (?qgq_main@@YAHHPEAPEBD@Z + 0x7b)\n\t0x7ffe6c3c2e98: CCL_MSG + 0x12e98 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)\n\t0x7ffe6c3c467e: CCL_MSG + 0x1467e (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x6e)\n\t0x7ffe6c4c6660: ccl_mem + 0x16660 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ffe6c3c2761: CCL_MSG + 0x12761 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff6557924e7: quartus + 0x24e7 (WinMain + 0x127)\n\t0x7ff655791e58: quartus + 0x1e58 (__tmainCRTStartup + 0x148)\n\t0x7ffe91cb257c: KERNEL32 + 0x1257c (BaseThreadInitThunk + 0x1c)\n\t0x7ffe92e2af27: ntdll + 0x5af27 (RtlUserThreadStart + 0x27)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.1.0",
+		"build" : "625",
+		"edition" : "Standard Edition"
+	}
+}

@@ -1,0 +1,17 @@
+module LFSR_tb();
+	reg clk;
+	wire [4:0] lfsr;
+	
+	LFSR DUT(
+		.clk(clk),
+		.lfsr(lfsr) 
+	); 
+	
+	always #5 clk = ~clk; 
+	
+	initial begin
+		clk = 1'b0;
+	end
+
+endmodule 
+	

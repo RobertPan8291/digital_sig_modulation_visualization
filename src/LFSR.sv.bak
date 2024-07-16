@@ -1,0 +1,73 @@
+module d_ff(
+	input clk,
+	input in,
+	output logic out
+	);
+	
+	always_ff @(posedge clk) begin
+		out <= in;
+	end
+endmodule 
+
+module LFSR(
+	input clk,
+	input rst,
+	output logic [4:0] lfsr
+	);
+	
+	
+	logic lfsr_3_out = 1'b0;
+	logic lfsr_2_out = 1'b0;
+	logic lfsr_1_out = 1'b1;
+	logic lfsr_0_out = 1'b0;
+	logic lfsr_4_out = 1'b0;
+	logic feedback;
+	
+	assign feedback = lfsr_0_out ^ lfsr_2_out;
+	
+	assign lfsr = {lfsr_4_out, lfsr_3_out, lfsr_2_out, lfsr_1_out, lfsr_0_out};
+	
+	always_ff(negedge rst) begin
+		if(~rst) begin
+			lfsr_3_out = 1'b0;
+			lfsr_2_out = 1'b0;
+			lfsr_1_out = 1'b1;
+			lfsr_0_out = 1'b0;
+			lfsr_4_out = 1'b0;
+		end
+	end
+	
+	d_ff lfsr3(
+		.clk(clk),
+		.in(lfsr_4_out),
+		.out(lfsr_3_out)
+	);
+	
+	
+	d_ff lfsr2(
+		.clk(clk),
+		.in(lfsr_3_out),
+		.out(lfsr_2_out)
+	);
+	
+	d_ff lfsr1(
+		.clk(clk),
+		.in(lfsr_2_out),
+		.out(lfsr_1_out)
+	);
+	
+	d_ff lfsr0(
+		.clk(clk),
+		.in(lfsr_1_out),
+		.out(lfsr_0_out)
+	); 
+	
+	d_ff lfsr4(
+		.clk(clk),
+		.in(feedback),
+		.out(lfsr_4_out)
+	); 
+	
+endmodule
+
+	

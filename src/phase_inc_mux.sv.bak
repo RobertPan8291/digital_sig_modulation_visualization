@@ -1,0 +1,17 @@
+module phase_inc_mux(
+	input [31:0] dds_increment,
+	input [1:0] sel,
+	output logic [31:0] selected_phase_inc
+	); 
+	
+	
+	always_comb begin
+		if(sel == 2'b01) 	
+			selected_phase_inc = dds_increment;
+		else 
+			selected_phase_inc = 32'd258;
+	end
+	
+endmodule 
+
+	
